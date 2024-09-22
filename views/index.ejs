@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Punsters Paradise</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+
+<body>
+	<div class="main-container">
+		<h1 class="heading">PUNSTER'S PARADISE</h1>
+
+		<div class="pun">
+			<p><%= setup %></p>
+		</div>
+
+		<div id="punchline" class="punchline">
+			<p><%= delivery %></p>
+		</div>
+
+		<input class="submit" type="submit" value="Punchline" onclick="showPunchLine()" >
+
+		<input class="refresh" type="submit" value="Refresh" onclick="reloadPage()">
+	</div>
+
+
+	<footer>
+		© 2024 Afebu Balogun.
+	</footer>
+	<script>
+		function showPunchLine() {
+			var punchlineDiv = document.getElementById("punchline"); //getting the puchline div
+			punchlineDiv.style.display = "block"// making it visible to the user on clicking
+		}
+
+		function reloadPage() {
+			location.reload(); // reloading the page on clicking
+		}
+	</script>
+</body>
+
+</html>
