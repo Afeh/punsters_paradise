@@ -10,7 +10,7 @@ To run this project locally, you would need to do the following:
 
 1. Clone this repository:
 ```bash
-git clone [https://github.com/](https://github.com/)Afeh/punsters_paradise.git
+git clone https://github.com/Afeh/punsters_paradise.git
 ```
 
 2. Navigate to the project directory:
